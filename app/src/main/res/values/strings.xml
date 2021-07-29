@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Testio</string>
+    <string name="make_test">Сделать тест</string>
+    <string name="test_inf">Информация о тесте</string>
+    <string name="pass_test">Пройти тест</string>
+    <string name="passes">Прохождения</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

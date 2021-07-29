@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/name_of_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите название теста"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            />
+        <Spinner
+            android:id="@+id/q_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+        </Spinner>
+            <LinearLayout
+                android:id="@+id/MultipleChoiceOA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+            <EditText
+                android:id="@+id/text_of_question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Текст вопроса"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+            <EditText
+                android:id="@+id/var11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите 1 вариант ответа"
+                />
+            <EditText
+                android:id="@+id/var21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите 2 варинт ответа"
+                />
+            <EditText
+                android:id="@+id/var31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите 3 вариант ответа"
+                />
+            <EditText
+                android:id="@+id/var41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите 4 вариант ответа"
+                />
+            <EditText
+                android:id="@+id/correct_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите текст правильного ответа"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/MultipleChoiceNA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+            <EditText
+                android:id="@+id/text_of_question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Текст вопроса"
+                />
+            <EditText
+                android:id="@+id/var22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите 1 вариант ответа"
+                />
+            <EditText
+                android:id="@+id/var23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите 2 варинт ответа"
+                />
+            <EditText
+                android:id="@+id/var24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите 3 вариант ответа"
+                />
+            <EditText
+                android:id="@+id/var25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите 4 вариант ответа"
+                />
+            <EditText
+                android:id="@+id/correct_answer21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите текст первого правильного ответа"
+                />
+            <EditText
+                android:id="@+id/correct_answer22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите текст второго правильный ответа"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/TypingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <EditText
+                android:id="@+id/text_of_question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Текст вопроса"
+                />
+            <EditText
+                android:id="@+id/number_of_words"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите количество слов в ответе"
+                android:inputType="number"
+                />
+                />
+            <EditText
+                android:id="@+id/correct_answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите текст правильного ответа"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/TypingNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <EditText
+                android:id="@+id/text_of_question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Текст вопроса"
+                />
+            />
+            <EditText
+                android:id="@+id/correct_answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите число"
+                android:inputType="number"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Matching"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <EditText
+                android:id="@+id/text_of_question51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Текст 1 вопроса"
+                />
+            />
+            <EditText
+                android:id="@+id/correct_answer51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ответ на первый вопрос"
+                />
+            <EditText
+                android:id="@+id/text_of_question52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Текст 2 вопроса"
+                />
+            />
+            <EditText
+                android:id="@+id/correct_answer52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ответ на второй вопрос"
+                />
+            <EditText
+                android:id="@+id/text_of_question53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Текст 3 вопроса"
+                />
+            />
+            <EditText
+                android:id="@+id/correct_answer53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ответ на 3 вопрос "
+                />
+            <EditText
+                android:id="@+id/text_of_question54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Текст 4 вопроса "
+                />
+            />
+            <EditText
+                android:id="@+id/correct_answer54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ответ на четвёртый вопрос "
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/TrueFalse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <EditText
+                android:id="@+id/text_of_question6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Текст вопроса"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+            />
+            <RadioGroup
+                android:id="@+id/rg_tf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp">
+
+            <RadioButton
+                android:id="@+id/radio_yes"
+                android:text="Да"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/radio_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Нет"
+                android:layout_weight="1" />
+            </RadioGroup>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/points_for_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Кол-во баллов"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+        />
+        <Button
+            android:id="@+id/next_question"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Следующий вопрос"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/submit_test"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Опубликовать тест"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
